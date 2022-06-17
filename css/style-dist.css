@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(../assets/fonts/LibreFranklin-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(../assets/fonts/LibreFranklin-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(../assets/fonts/LibreFranklin-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(../assets/fonts/LibreFranklin-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(../assets/fonts/LibreFranklin-Bold.ttf);
+  font-weight: 700;
+}
+
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+body{
+  font-family: 'Libre Franklin', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: var(--white);
+}
+:root{
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --dark-blue: hsl(209, 33%, 12%);
+}
+.error-msg{
+  display: none;
+}
+.error-visible{
+  display: block;
+}

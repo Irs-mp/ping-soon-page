@@ -20,7 +20,8 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+body,
+figure {
   margin: 0;
 }
 
@@ -74,6 +75,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent;
 }
 
@@ -146,6 +148,7 @@ sup {
  */
 
 img {
+  max-width: 100%;
   border-style: none;
 }
 
