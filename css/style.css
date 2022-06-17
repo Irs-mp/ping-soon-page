@@ -46,9 +46,121 @@ body{
   --gray: hsl(0, 0%, 59%);
   --dark-blue: hsl(209, 33%, 12%);
 }
+.bold{
+  font-weight: 700;
+  color: var(--dark-blue);
+}
 .error-msg{
   display: none;
+  margin-left: 4em;
+  font-style: italic;
+  font-weight: 600;
+  text-align: left;
+  color: var(--light-red);
 }
 .error-visible{
   display: block;
+}
+
+.header{
+  padding-top: 10.47rem;
+}
+.logo{
+  margin-inline: auto;
+  width: 6.7rem;
+}
+.main{
+  padding-top: 3.25rem;
+  text-align: center;
+}
+.title{
+  font-size: 2.7rem;
+  font-weight: 300;
+  letter-spacing: .5px;
+  color: var(--gray);
+}
+.subtitle{
+  margin-top: 2.4rem;
+  font-weight: 300;
+  letter-spacing: .1px;
+  color: var(--dark-blue);
+}
+.form{
+  margin-inline: auto;
+  width: 75vw;
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.25em;
+}
+.email{
+  padding: 2em 4em 1.65em;
+  border: 2px solid var(--pale-blue);
+  border-radius: 3em;
+}
+.button{
+  padding: 1.05em 0 ;
+  font-size: 1.45rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: .3px;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 3em;
+}
+.email::placeholder{
+  font-weight: 300;
+  font-size: 1.45rem;
+  letter-spacing: .6px;
+  color: var(--pale-blue);
+}
+.charts{
+  width: 85vw;
+  margin: 8.4rem auto 0;
+}
+.footer{
+  margin-top: 15rem;
+  display: grid;
+  justify-items: center;
+  gap: 2.3em;
+  text-align: center;
+}
+.social{
+  display: flex;
+  gap: 1.7em;
+}
+.social__item{
+  width: 3.8rem;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  border: thin solid var(--pale-blue);
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: background .3s ease-in-out;
+}
+.social__item--link{
+  line-height: 0;
+}
+.social__item--icon{
+  width: 1.9rem;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  color: var(--blue);
+  transition: color .3s ease-in-out;
+}
+.attribution{
+  font-size: 1.25rem;
+  color: var(--gray);
+}
+.attribution__author--link{
+  color: var(--blue);
+}
+
+
+.social__item:hover{
+  background-color: var(--blue);
+}
+.social__item:hover .social__item--icon{
+  color: white;
 }

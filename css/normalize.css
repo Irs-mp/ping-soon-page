@@ -33,6 +33,12 @@ main {
   display: block;
 }
 
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -149,6 +155,7 @@ sup {
 
 img {
   max-width: 100%;
+  display: block;
   border-style: none;
 }
 
