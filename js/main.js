@@ -12,6 +12,8 @@ function verifyEmail(email){
     email.value = ''
     email.focus()
   } else {
+    errorMsg.classList.remove('error-visible')
+    email.style.outlineColor = 'hsl(223, 100%, 88%)'
     email.value = ''
     email.focus()
   }
@@ -23,3 +25,9 @@ function send(e){
 }
 
 button.addEventListener('click', send)
+window.addEventListener('resize', () => {
+  if (errorMsg.classList.contains('error-visible')){
+    errorMsg.classList.remove('error-visible')
+    email.style.outlineColor = 'hsl(223, 100%, 88%)'
+  }
+})
