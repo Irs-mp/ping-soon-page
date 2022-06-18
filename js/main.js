@@ -5,7 +5,8 @@ const svg = document.getElementById('svg')
 
 function verifyEmail(email){
   const regExp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g
-  let checkOut = regExp.test(email.value)
+  let checkOut = regExp.test(email.value.toLowerCase())
+
   if (!checkOut) {
     errorMsg.classList.add('error-visible')
     email.style.outlineColor = 'hsl(354, 100%, 66%)'
