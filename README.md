@@ -44,7 +44,7 @@ Users should be able to:
 
 ## Link
 
-- [Live site URL here](https://your-live-site-url.com) 👀
+- [Live site URL here](https://irs-mp.github.io/ping-soon-page/) 👀
 
 ## Built with
 
